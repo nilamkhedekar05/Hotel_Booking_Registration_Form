@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hotel Booking Form</h2>
+        <form action="process_booking.php" method="post">
+            <div class="form-group">
+                <label for="customerName">Customer Name*</label>
+                <input type="text" class="form-control" id="customerName" name="customerName" required>
+            </div>
+            <div class="form-group">
+                <label for="checkInDate">Check-in Date*</label>
+                <input type="date" class="form-control" id="checkInDate" name="checkInDate" required>
+            </div>
+            <div class="form-group">
+                <label for="totalDays">Total No of Days*</label>
+                <input type="number" class="form-control" id="totalDays" name="totalDays" required>
+            </div>
+            <div class="form-group">
+                <label for="totalPersons">Total No of Persons*</label>
+                <input type="number" class="form-control" id="totalPersons" name="totalPersons" required>
+            </div>
+            <div class="form-group">
+                <label for="advanceAmount">Advance Amount*</label>
+                <input type="number" class="form-control" id="advanceAmount" name="advanceAmount" required>
+            </div>
+            <div class="form-group">
+                <label for="additionalCharges">Additional Charges</label>
+                <input type="number" class="form-control" id="additionalCharges" name="additionalCharges">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
